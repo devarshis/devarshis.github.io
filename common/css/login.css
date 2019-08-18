@@ -1,0 +1,101 @@
+body{
+  background: #b24592;
+  background: -webkit-linear-gradient(to right, #b24592, #f15f79);
+  background: linear-gradient(to right, #b24592, #f15f79);
+  margin: 0;
+  padding: 0;
+}
+
+.holder{
+  height:80px;
+  width:300px;
+  background-color:#3b5998;
+  border-radius:2px;
+  box-shadow: 0px 0px 10px grey;
+  overflow:hidden;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.holder:hover{
+   animation:hover 0.2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes hover{
+	0%{box-shadow: 0px 0px 10px grey;}
+	100%{box-shadow: 0px 0px 55px black;}
+}
+
+.text{
+  color:white;
+  font-weight:bolder;
+  font-size:20px;
+  font-family:sans-serif;
+  float:right;
+  margin-right:20px;
+  line-height:80px;
+}
+
+.icon-holder{
+  height:80px;
+  width:50px;
+  background-color:transparent;
+  margin-left:15px;
+  position:absolute;
+  line-height:80px;
+  padding-top: 23px;
+  position:absolute;
+  z-index:2;
+}
+
+.facebook-icon{
+  font-size:30px;
+  color:#3b5998;
+}
+
+.comer{
+  height:150px;
+  width:50px;
+  position:absolute;
+  z-index:1;
+  background-color:white;
+  margin-left:15px;
+  animation:toup 3s;
+  animation-fill-mode: forwards;
+  box-shadow:inset 0px 0px 3px black;
+}
+
+@keyframes toup{
+  0%{margin-top:-250px}
+  100%{margin-top:-20px}
+}
+
+
+.image{
+	height: 25px;
+	width: 25px;
+	margin-top: -4px;
+	position: absolute;
+}
+
+.link{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer{
+	position: absolute;
+	bottom: 10px;
+	left:10px;
+	opacity: 0.2;
+	font-family: sans-serif;
+}
+
+.footer:hover{
+	opacity: 0.7;
+}

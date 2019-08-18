@@ -1,0 +1,538 @@
+
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #787878;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+}
+
+a {
+  color: #787878;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: #2e2e2e;
+}
+a.active {
+  color: #2e2e2e;
+}
+
+nav {
+  padding: 2.5rem 0 2.5rem 0;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+nav li {
+  font-size: 1.25rem;
+}
+
+
+#highlight {
+  color: #ea8478;
+  font-size: 1.25rem;
+}
+
+.gallery {
+  padding: 0 0 4rem 0;
+}
+
+.img-container {
+  width: 100%;
+  height: 370px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.img-container:hover .img-content-hover {
+  display: block;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.imager{
+  height: 300px;
+}
+
+.title {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.category {
+  font-size: 1rem;
+  color: #787878;
+}
+
+.img-content {
+ display: block;
+}
+
+.social, .copyright {
+  margin: 1rem;
+}
+
+.social li {
+  display: inline-block;
+}
+
+footer {
+  padding: 1rem 0;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+@supports (display: grid) {
+  .gallery .grid {
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 62rem) {
+  nav ul {
+    
+  }
+}
+@media screen and (max-width: 1024px) {
+  img:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .img-container {
+    height: 100%;
+  }
+  .img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
+
+.shadow{
+  box-shadow: 0px 10px 20px #0d41ff2b;
+}
+
+.logoutbutton{
+    height: 50px;
+    width: 100px;
+    font-size: 1.125rem;
+    background-color: pink;
+    font-family: Barlow;
+    border: 0;
+    box-shadow: 0px 3px 5px grey;
+    cursor:pointer;
+}
+
+.logoutul{
+    justify-content:flex-end;
+    padding-right:25px;
+}
+
+.download-icon{
+  position: absolute;
+  z-index: 99;
+  font-size: 32px;
+  color: white;
+  margin-top: 10px;
+  margin-left:50px;
+  cursor: pointer;
+}
+
+.drive-icon{
+    height:35px;
+    width:35px;
+    position:absolute;
+    z-index:99;
+    margin-top:8px;
+    margin-left:90px;
+    cursor:pointer;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;	
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+  opacity: 1;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*Slide Show*/
+
+.maindiv1{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  display: none;  
+}
+
+.slideShowCross{
+  float: right;
+  font-size: 20px ;
+  position: fixed;
+  background-color: #2196F3;
+  z-index: 99999;
+  color: white;
+  padding: 10px 15px;
+  position: absolute;
+}
+
+.slideShowImage{
+  max-height: 100%;
+  max-width: 100%;
+   
+}
+
+.container1 {
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: #fff;  
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.mySlides {
+  display: none;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*END of slide show*/
+
+
+/*CheckBox*/
+/* Hide the browser's default checkbox */
+.checkbox{
+  position: absolute;
+  z-index: 99;
+  margin:10px;
+  cursor:pointer;
+
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px; 
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 10px;
+    top: 7px;
+    width: 9px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*End Of Checkbox*/
+
+
+/*Tooltip*/
+.tooltip {
+    position: absolute;
+    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    font-family:Barlow;
+    font-size:10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 135%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltipselect{
+    margin-top:43px;
+    margin-left:-43px !important;
+    line-height:1;
+}
+
+.tooltipdrive{
+    margin-top:53px;
+    margin-left:48px !important;
+    line-height:1;
+}
+
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/*End of Tooltip*/
+
+
+
+/*Modal Code*/
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 999; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Button*/
+.downloadbutton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.downloadbutton:hover {
+    background-color: #555555;
+    color: white;
+}
+
+
+/*End Of Modal Code*/
+
+/*Progressbar*/
+
+.progressbar {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+   	border: 1px solid black;
+}
+
+.progressbarin {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    
+}
+
+.progressper{
+	margin-left: 95px;
+	z-index: -1;
+	position: absolute;
+}
+
+
+/*End of Progressbar*/
+
+
+

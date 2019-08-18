@@ -1,0 +1,520 @@
+<html>
+
+<head>
+
+    <title>Devarshi Sathiya</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="common/css/all.css">
+    
+<style>
+
+	body{
+		background: linear-gradient(25deg, rgba(66, 230, 149, 1), rgba(66, 32, 149, 1));
+	}
+
+	p{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.maindiv{
+		/*background-color: #87ceeb;*/
+		background-color: transparent;
+		height: 350px;
+		width: 450px;
+		position: absolute;
+		top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2px;
+	}
+
+/*----------------------------------------------------------*/
+/*MENU PORTION*/
+
+
+	.menusquare{
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		z-index: 999;
+		background-color: transparent;
+		/*box-shadow: 1px 1px 10px black;*/
+	}
+
+	.menuicon{
+		color: white;
+		font-size: 24px;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.menuright{
+		margin-left: 50px;
+		top:100px;
+		height: 50px;
+		width: 400px;
+		position: absolute;
+		z-index:9 ;
+		/*background-color: #ecf0f1;*/
+		/*transform-origin:bottom;
+		transform: rotateX(-90deg);*/
+		text-align: right;
+		vertical-align: center;
+		line-height: 50px;
+		animation: menuright 0.6s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+		/*box-shadow: 0px 10px 50px black;*/
+	}
+
+	@keyframes menuright{
+		0%{top:100px;}
+		100%{top:0px;}
+	}
+
+	.menubottom{
+
+		position: absolute;
+		margin-top: 175px;
+		height: 50px;
+		width: 300px;
+		left: -25px;
+		z-index: 10;
+		transform: rotate(-90deg);	
+		/*background-color: #ecf0f1;*/
+		line-height: 50px;
+		animation: menubottom 0.6s;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+	}
+
+	@keyframes menubottom{
+		0%{left: -25px}
+		100%{left: -125px}
+	}
+
+
+
+
+
+/*END OF MENU PORTION*/
+/*----------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------*/
+/*CARD PORTION*/
+
+	
+	.cardcontainer{
+		height: 300px;
+		width: 400px;
+		position: absolute;
+		overflow: hidden;
+		background-color: #87ceeb ;
+		box-shadow: 10px 10px 50px black;
+		overflow: hidden;
+		margin-left: 50px ;
+		margin-top:50px ; 
+		z-index: 999;
+	}
+
+	.div{
+			height: 300px;
+			width: 400px;
+			background-color: #87ceeb;
+			position: absolute;
+			z-index:1;
+			margin-top: -1000px;
+			animation: background1 2s;
+			animation-fill-mode: forwards;
+
+	}
+
+	@keyframes background1  {
+			0%{margin-top: -1000px;}
+			100%{margin-top: 0px;}
+	}
+
+
+	.triangle-0 {
+		  width: 500px;
+		  height: 200px;
+		  background-color: black;
+		  transform: rotate(300deg);
+		  margin-left: -68%;
+		  z-index: 2;
+		  position: absolute;
+		  box-shadow: 1px 1px 10px black;
+		  left: 0px;
+
+	}
+
+	.triangle-1 {
+		  width: 500px;
+		  height: 500px;
+		  transform: rotate(300deg);
+		  margin-left: 38%;
+		  background-color: black;
+		  z-index: 2;
+		  position: absolute;
+		  box-shadow: 1px 1px 10px black;
+		}
+
+	.yellow_d{
+		font-family: Roboto;
+		position: absolute;
+		font-size: 150px;
+		z-index: 1;
+		color:yellow;
+		top: 50%;
+        left: 30%;
+        background-color: #90ee90;
+  		border-radius: 2px;
+        transform: translate(-50%, -50%);
+        box-shadow: 10px 10px 50px grey;
+	}
+
+	.front_text{
+		font-family: Roboto;
+		position: absolute;
+		font-size: 50px;
+		z-index: 22;
+		color:white;
+		top: 60%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+
+	}
+
+	.righter{
+		
+		  width: 10px;
+		  height: 10px;
+		  border-bottom: solid 5px transparent;
+		  border-left: solid 5px transparent;
+		  border-right: solid 5px white;
+		  border-top: solid 5px white;
+		  top: 50%;
+          left: 80%;
+          transform: translate(-50%, -50%);
+		  z-index: 22;
+		  position: absolute;
+	
+		}
+
+	.box{
+		height: 30px;
+ 		width: 150px;
+ 		position: absolute;
+ 		z-index:22;
+ 		top: 73%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        /*border: 1px solid grey;*/
+	}
+
+	.box_back{
+		position: absolute;
+		height:120px;
+		width:150px;
+		/*background-color: red;*/
+		animation: slideup 5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+
+	}
+
+	@keyframes slideup{
+		0%{top:0px;}
+		10%{top:-30px;}
+		20%{top:-30px;}
+		30%{top:-30px;}
+	
+		40%{top:-60px;}
+		50%{top: -60px;}
+		60%{top: -60px;}
+		
+		70%{top: -90px;}
+		80%{top: -90px;}
+		90%{top: -90px;}
+		100%{top: -120px;}
+	}
+
+	.box_sagment{
+		height:30px;
+		width: 150px;
+		/*background-color: red;*/
+		text-align: right;
+		color: white;
+		font-family: Roboto;	
+	}
+
+	.icon{
+
+	}
+
+	.icon:hover{
+		font-size: 20px;
+	}
+
+	.icon_instagram{
+		color: white;
+		position: absolute;
+		z-index: 22;
+		font-size: 15px;
+		top: 90%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+	}
+
+	.icon_github{
+		color: white;
+		position: absolute;
+		z-index: 22;
+		font-size: 15px;
+		top: 90%;
+		left: 82%;
+		transform: translate(-50%, -50%);
+	}
+
+	.icon_codepen{
+		color: white;
+		position: absolute;
+		z-index: 22;
+		font-size: 15px;
+		top: 90%;
+		left: 89%;
+		transform: translate(-50%, -50%);
+	}
+
+	.link{
+		text-decoration: none;
+		outline: none;
+		color: white;
+	}
+
+/*END OF CARD PORTION*/
+/*-----------------------------------------------------------------------*/
+
+
+/*MENU CARD PORTION*/
+/*-----------------------------------------------------------------------*/
+.menucard{
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 99;
+	font-family: Roboto;
+	text-align: left;
+	color: white;
+	padding: 15px;
+	display: none;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*END OF MENU CARD PORTION*/
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="maindiv" style="display: none;" id = "maindiv">
+
+		<div class="menusquare">			
+			<i class="fa fa-bars menuicon" aria-hidden="true"></i>
+		</div>
+		<div class="menuright">
+				<span style="margin-right: 10px ; font-family: Roboto ; color: white"><span onclick="displayabout()">About</span> | <span onclick="displayskills()">Skills</span> | <span onclick="displayprojects()">Projects</span> | <span onclick="displayresume()">Resume</span> | <span><a class="link" href="https://www.blog.devarshi.xyz">Blog</a></span> </span>
+		</div>
+		<div class="menubottom">
+				<span style="margin-left: 10px ; font-family: Roboto ; color: white"><a class="link" href="/home.php">Facebook Album Downloader</a></span>
+		</div>
+		
+
+
+
+
+<div class="cardcontainer">
+
+
+
+<!-- CARD SECTION -->
+
+		<div class="menucard" id="about">
+			<span onclick="gohome()"><i class="fas fa-home" style="color: skyblue"></i></span>
+			<h1>Hi, I'm Devarshi</h1>
+			<p>Final Year Student who loves <i class="fas fa-heart" style="padding:2px; background-color: #F03434;border-radius: 2px"></i> UI-UX and</p> 
+			<p> Web Design.</p>
+			<br/>
+			<p>Whammm ! I love Games <i class="fas fa-gamepad"></i> , Linux <i class="fab fa-linux"></i> and </p>
+			<p>Photography <i class="fas fa-camera"></i> too!</p>
+			<br/>
+			<p>And some Coffee <i class="fas fa-coffee"></i> with Music <i class="fas fa-music"></i> over Code <i class="fas fa-code"></i> ...</p>
+		</div>
+
+
+		<div>
+			<div class="menucard" id="skills">
+			<span onclick="gohome()"><i class="fas fa-home" style="color: skyblue"></i></span>
+			<h1>Skills <sup><i class="far fa-keyboard"></i></sup></h1>
+			<p>Web:</p>
+			<p>HTML, CSS, JavaScript, Sass, PHP, MySql</p>
+			<br/>
+			<p>Languages</p>
+			<p>C, Python(Artificial Intelligence & Machine Learning)</p>
+			<br/>
+			<p>Other</p>
+			<p>React Native, FLStudio (yes, music production too)</p>
+			</div>
+		</div>	
+
+		<div>
+			<div class="menucard" id="projects">
+			<span onclick="gohome()"><i class="fas fa-home" style="color: skyblue"></i></span>
+			<h1>Projects <sup><i class="fas fa-code"></i></sup></h1>
+			<p>Few websites and a <span style="background-color: red; padding: 2px;border-radius: 2px">Color</span> Palette Generator.</p>
+			</div>
+		</div>	
+
+		<div>
+			<div class="menucard" id="resume">
+			<span onclick="gohome()"><i class="fas fa-home" style="color: skyblue"></i></span>
+			<h1>Resume <sup><i class="far fa-file"></i></sup></h1>
+			<p><a class="link" href="Devarshi Sathiya.pdf">Click me to download <i class="fas fa-download"></i></a></p>
+			<!--<h3>Curl <sup><i class="fas fa-terminal"></i></sup></h3>
+	                <code>curl "https://www.devarshi.xyz/me/"</code>-->
+			</div>
+		</div>	
+
+<!-- END OF CARD SECTION -->
+
+<!-- MAIN SECTION -->
+
+		<div class="div">
+			<span class="yellow_d" style="">D</span>
+		</div>
+
+
+
+ 		<div class="triangle-0"></div>
+
+ 		<span class="front_text">evarshi</span>
+ 		<div class="box">
+        	<div class="box_back">
+        		<div class="box_sagment"></div>
+	        	<div class="box_sagment">Web Designer</div>
+	        	<div class="box_sagment">Gamer</div>
+	        	<div class="box_sagment">Coffee ?</div>
+        	</div>
+ 		</div>
+
+
+	 	<a class="link" href="https://www.instagram.com/d.vlpr">
+		<i class="fab fa-instagram icon_instagram"></i></a>
+
+		<a class="link" href="https://github.com/Devarshi-Sathiya">
+		<i class="fab fa-github-square icon_github"></i></a>
+
+		<a class="link" href="https://codepen.io/devarshisathiya">
+		<i class="fab fa-codepen icon_codepen"></i></a>
+
+
+	 	<div class="triangle-1"></div>
+
+	 	<div class="righter"></div>
+
+
+	
+<!-- END OF MAIN SECTION -->
+
+</div>	
+
+
+	<script type="text/javascript">
+
+	/*var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+        
+        if( isMobile.any() ) alert('Zoom in for better view');
+	*/
+	
+	
+		window.onload = function() {
+ 		   document.getElementById("maindiv").style.display = "block";
+		}
+		
+	
+		function gohome(){
+			document.getElementById("about").style.display = "none";
+			document.getElementById("skills").style.display = "none";
+			document.getElementById("projects").style.display = "none";
+			document.getElementById("resume").style.display = "none";
+		}
+
+		function displayabout(){
+			document.getElementById("about").style.display = "block";
+			document.getElementById("skills").style.display = "none";
+			document.getElementById("projects").style.display = "none";
+			document.getElementById("resume").style.display = "none";
+		}
+
+		function displayskills(){
+			document.getElementById("about").style.display = "none";
+			document.getElementById("skills").style.display = "block";	
+			document.getElementById("projects").style.display = "none";
+			document.getElementById("resume").style.display = "none";
+		}
+
+		function displayprojects(){
+			document.getElementById("about").style.display = "none";
+			document.getElementById("skills").style.display = "none";	
+			document.getElementById("projects").style.display = "block";
+			document.getElementById("resume").style.display = "none";
+		}
+
+		function displayresume(){
+			document.getElementById("about").style.display = "none";
+			document.getElementById("skills").style.display = "none";	
+			document.getElementById("projects").style.display = "none";
+			document.getElementById("resume").style.display = "block";
+		}
+	</script>
+
+
+</body>
+
+
+</html>
